@@ -44,10 +44,10 @@ jobs:
     - name: Upload files
       uses: Creepios/sftp-action@v1.0.3
       with:
-        host: ${{ secrets.FTP_SERVER }}
+        host: '${{ secrets.FTP_SERVER }}'
         port: 22
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: '${{ secrets.FTP_USERNAME }}'
+        password: '${{ secrets.FTP_PASSWORD }}'
         localPath: './'
         remotePath: './test/'
         

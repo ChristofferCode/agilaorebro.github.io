@@ -50,5 +50,3 @@ jobs:
         password: 'x4DY&3vrqv'
         localPath: './'
         remotePath: './test/'
-      env:
-        host: ${{ secrets.FTP_SERVER }}

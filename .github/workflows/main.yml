@@ -44,7 +44,7 @@ jobs:
     - name: Upload files
       uses: Creepios/sftp-action@v1.0.3
       with:
-        host: 'ssh.agilaorebro.se'
+        host: '${{ secrets.FTP_SERVER }}'
         port: 22
         username: 'agilaorebro.se'
         password: 'x4DY&3vrqv'

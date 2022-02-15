@@ -39,17 +39,14 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-     - name: Run a one-line script
-       run: echo ${{ secrets.FTP_SERVER }}
- #   - name: Get latest code
- #     uses: actions/checkout@v2.3.4
- #   - name: Upload files
- #     uses: Creepios/sftp-action@v1.0.3
- #     with:
- #       host: '${{ secrets.FTP_SERVER }}'
- #       port: 22
- #       username: '${{ secrets.FTP_USERNAME }}'
- #       password: '${{ secrets.FTP_PASSWORD }}'
- #       localPath: './'
- #       remotePath: './test/'
-        
+    - name: Get latest code
+      uses: actions/checkout@v2.3.4
+    - name: Upload files
+      uses: Creepios/sftp-action@v1.0.3
+      with:
+        host: 'ssh.agilaorebro.se'
+        port: 22
+        username: 'agilaorebro.se'
+        password: 'x4DY&3vrqv'
+        localPath: './'
+        remotePath: './test/'

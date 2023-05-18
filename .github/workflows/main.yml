@@ -18,3 +18,13 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         localPath: './index.html'
         remotePath: './'
+    - name: Css
+      uses: Creepios/sftp-action@v1.0.3
+      with:
+        host: ${{ secrets.FTP_SERVER }}
+        port: 22
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localPath: './css/main.css'
+        remotePath: './css/'
+  

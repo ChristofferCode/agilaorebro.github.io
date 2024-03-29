@@ -134,6 +134,21 @@ p, ul, li
     vertical-align: middle;
 }
 
+.header-background-light {
+    background-image: url("../images/top-splash-konferens-2.jpg");
+    background-color: #333333;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    vertical-align: middle;
+}
+
 .fullheight
 {
     display:table;

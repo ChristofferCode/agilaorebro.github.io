@@ -195,6 +195,16 @@ p, ul, li
     text-transform: uppercase;
 }
 
+.main-large-text
+{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 .center-wrapper-div
 {
     width: 100%;
